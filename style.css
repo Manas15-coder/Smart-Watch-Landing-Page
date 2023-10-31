@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    position: fixed;
+    top: 0;
+    padding: 0px 100px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffff;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    color: #ffff;
+}
+
+.navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-links ul li {
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.navbar-links ul a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.navbar-links ul li:hover {
+    border-bottom: 2px solid #cc2120;
+    transition: 0.6s ease-in-out;
+}
+
+.toggle-btn {
+    display: none;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+}
+
+.open {
+    .navbar-links ul {
+        display: flex;
+        flex-direction: column;
+        max-height: 400px;
+        height: 100%;
+    }
+}
+
+@media (max-width:769px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .navbar-links ul {
+        display: none;
+    }
+}
+
+/*banner*/
+#banner {
+    background-color: #100f10;
+    color: #ffff;
+    padding: 100px 200px;
+    padding-top: 200px;
+}
+.banner-img{
+    animation: float 3s ease-in-out infinite;
+}
+.btn-buy {
+    padding: 10px 20px;
+    background-color: #cc2120;
+    border: none;
+    border-radius: 50px;
+    color: #ffff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.btn-buy:hover {
+    background-color: #ffff;
+    color: #cc2120;
+    border: 2px solid #cc2120;
+}
+
+#scroll-btn {
+    border: none;
+    background-color: transparent;
+    color: #ffff;
+    font-size: 2rem;
+}
+
+@media (max-width:769px) {
+
+    #banner,
+    #features,
+    #video,
+    #team,
+    #app {
+        padding: 100px 20px;
+    }
+}
+
+/*features*/
+#features {
+    padding: 100px 0px;
+    background-color: #ffffff;
+}
+
+.feature {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.feature p {
+    color: rgb(184, 184, 184);
+}
+
+#features i {
+    padding: 10px;
+    border-radius: 50%;
+    border: 4px solid #f5d3d2;
+    background-color: #cc2120;
+    color: #ffff;
+}
+
+/*video*/
+#video {
+    padding: 100px 0px;
+    background-color: #010101;
+    color: #ffff;
+    text-align: center;
+}
+
+
+
+#video p {
+    font-size: 1.5rem;
+}
+
+#video i {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 4px solid #760400;
+    background-color: #cc2120;
+    color: #ffff;
+    font-size: 2rem;
+}
+
+#video i:hover {
+    border: 4px solid #cc2120;
+}
+
+/*team*/
+#team {
+    background-color: #ffffff;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.team-img {
+    border-radius: 50%;
+    max-width: 100px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #edecec;
+}
+
+.card {
+    background-color: #e3e2e2;
+    border-radius: 15px;
+    border: none;
+    padding: 40px 20px;
+    transition: 0.03s ease-in-out;
+    max-width: 350px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card:hover {
+    border: 2px solid #cc2120;
+}
+
+/*health*/
+#health {
+    padding: 100px 0px;
+    background-color: #100f0f;
+    color: #ffff;
+    text-align: center;
+}
+
+#health i {
+    font-size: 2rem;
+    background-color: #cc2120;
+    color: #ffff;
+    border-radius: 50%;
+    padding: 20px 20px;
+    border: 4px solid #361312;
+    margin: 20px;
+}
+
+#health .card-body {
+    margin: 20px;
+}
+
+/*testimonials*/
+#testimonials {
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.testimonial-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+/*app*/
+#app {
+    padding: 100px 0px;
+    background-color: #010101;
+    color: #ffff;
+}
+
+.download-btn {
+    max-width: 200px;
+    width: 100%;
+}
+
+.app-content p {
+    padding: 100px 0px;
+    font-size: 1.5rem;
+}
+
+/*map*/
+#map {
+    background-color: #010101;
+    color: #ffff;
+}
+
+#map iframe {
+    width: 100%;
+}
+@keyframes float{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+/*footer*/
+#footer{
+    background-color: #cc2120;
+    text-align: center;
+    color: #ffff;
+}
